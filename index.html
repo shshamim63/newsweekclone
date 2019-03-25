@@ -9,13 +9,15 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 </head>
 <body>
-  <header>
-    <div>
-      <div>Fri, Mar 22, 2019</div>
-      <div class="navbar-brand">Newsweek</div>
-      <div>
-        <p>SIGN IN</p>
-        <button>SUBSCRIBE ></button>
+  <header class="mw-100 container">
+    <div class="bg-danger row p-3">
+      <div class="col text-white">Fri, Mar 22, 2019</div>
+      <div class="col h1 text-center text-white">Newsweek</div>
+      <div class="col">
+        <div class="float-right d-flex">
+          <p class="text-white">SIGN IN</p>
+          <button class="bg-white text-danger">SUBSCRIBE ></button>
+        </div>
       </div>
     </div>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -23,136 +25,141 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-        <ul class="navbar-nav mr-auto mt-2 mt-lg-0 spc.bet row justify-content-end">
-          <li class="nav-item active col">U.S</li>
-          <li class="nav-item active col">World</li>
-          <li class="nav-item active col">Business</li>
-          <li class="nav-item active col-2 text-center">Tech & Science</li>
-          <li class="nav-item active col">Culture</li>
-          <li class="nav-item active col">Sports</li>
-          <li class="nav-item active col">Health</li>
-          <li class="nav-item active col">Opinion</li>
-          <li class="nav-item active col">Ndelible</li>
-          <li class="nav-item active col">
-            <form class="form-inline my-2 my-lg">
-              <input class="form-control mr-sm" type="search" placeholder="Search">
-              <!-- <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button> -->
-              <i class="fas fa-search"></i>
+        <ul class="navbar-nav list-group list-group-horizontal m-auto">
+          <li class="nav-item list-group-item active text-center">U.S</li>
+          <li class="nav-item list-group-item active text-center">World</li>
+          <li class="nav-item list-group-item active text-center">Business</li>
+          <li class="nav-item list-group-item active text-center">Tech & Science</li>
+          <li class="nav-item list-group-item active text-center">Culture</li>
+          <li class="nav-item list-group-item active text-center">Sports</li>
+          <li class="nav-item list-group-item active text-center">Health</li>
+          <li class="nav-item list-group-item active text-center">Opinion</li>
+          <li class="nav-item list-group-item active text-center">Ndelible</li>
+          <li class="nav-item active list-group-item">
+            <form class="input-group input-group-sm">
+              <input class="form-control" type="search" placeholder="Search">
+              <button class="btn btn-outline-danger btn-sm" type="submit"><i class="fas fa-search"></i></button>
             </form>
           </li>
         </ul>
       </div>
     </nav>
   </header>
-  <main>
-    <div>
-      <section>
-        <div>
-          <h3>TOP STORY</h3>
-        </div>
-        <div>
-          <div>
-            <img src="https://s.newsweek.com/sites/www.newsweek.com/files/styles/md/public/2018/12/10/gettyimages-1000086024.jpg" alt="">
+  <main class="container">
+    <div class="row">
+      <section class="col-6 order-2 just">
+        <div class="content">
+          <div class="mw-100">
+            <h3 class="h5">TOP STORY</h3>
           </div>
-          <div>
-            <h3>WH Refuses to Give Congress Trump-Putin Communications</h3>
-            <p>“The President must be free to engage in discussions with foreign leaders without fear that those communications will be disclosed and used as fodder for partisan political purposes,” the White House counsel wrote in a letter to congressional committee chairmen.</p>
-          </div>
-          <div>
-            <h3>U.S. Creates 'Tensions' by Flying Bombers Near Russia</h3>
-          </div>
-        </div>
-        <div>
-          <div>
-            <h4>MORE STORIES</h4>
-          </div>
-          <div>
+          <div class="mw-100">
+            <div class="mw-100">
+              <img src="https://s.newsweek.com/sites/www.newsweek.com/files/styles/md/public/2018/12/10/gettyimages-1000086024.jpg" alt="" class="mw-75">
+            </div>
             <div>
-              <div>
-                <img src="https://s.newsweek.com/sites/www.newsweek.com/files/styles/sm_thumb/public/2013/11/26/b52_0.jpg" alt="">
-              </div>
+              <h3 class="h5">WH Refuses to Give Congress Trump-Putin Communications</h3>
+              <p>“The President must be free to engage in discussions with foreign leaders without fear that those communications will be disclosed and used as fodder for partisan political purposes,” the White House counsel wrote in a letter to congressional committee chairmen.</p>
+            </div>
+            <div>
               <h3>U.S. Creates 'Tensions' by Flying Bombers Near Russia</h3>
-              <p>Kremlin spokesperson Dmitry Peskov said "such actions by the United States do not lead to a strengthening of an atmosphere of security and stability in the region."</p>
             </div>
-            <hr>
+          </div>
+          <div>
+            <div>
+              <h4>MORE STORIES</h4>
+            </div>
             <div>
               <div>
-                <img src="https://s.newsweek.com/sites/www.newsweek.com/files/styles/sm_thumb/public/2019/03/21/gettyimages-1131500079-594x594.jpg" alt="">
+                <div>
+                  <img src="https://s.newsweek.com/sites/www.newsweek.com/files/styles/sm_thumb/public/2013/11/26/b52_0.jpg" alt="">
+                </div>
+                <h3>U.S. Creates 'Tensions' by Flying Bombers Near Russia</h3>
+                <p>Kremlin spokesperson Dmitry Peskov said "such actions by the United States do not lead to a strengthening of an atmosphere of security and stability in the region."</p>
               </div>
-              <h3>Democrat: Trump May Have Committed Bank Fraud</h3>
-              <p>New York’s attorney general subpoenaed Deutsche Bank this month for information about Trump’s financial records, and a congressional probe is coming, says Democratic Representative Ted Lieu.</p>
-            </div>
-            <hr>
-            <div>
+              <hr>
               <div>
-                <img src="https://s.newsweek.com/sites/www.newsweek.com/files/styles/sm_thumb/public/2019/03/20/ivanka-trump-jared-kushner-donald-trump.jpg" alt="">
+                <div>
+                  <img src="https://s.newsweek.com/sites/www.newsweek.com/files/styles/sm_thumb/public/2019/03/21/gettyimages-1131500079-594x594.jpg" alt="">
+                </div>
+                <h3>Democrat: Trump May Have Committed Bank Fraud</h3>
+                <p>New York’s attorney general subpoenaed Deutsche Bank this month for information about Trump’s financial records, and a congressional probe is coming, says Democratic Representative Ted Lieu.</p>
               </div>
-              <h3>Kushner Used WhatsApp for White House Business: Lawyer</h3>
-              <p>House Oversight Committee Chairman Elijah Cummings is investigating allegations of possible violations of federal records laws by Jared Kushner and Ivanka Trump.</p>
+              <hr>
+              <div>
+                <div>
+                  <img src="https://s.newsweek.com/sites/www.newsweek.com/files/styles/sm_thumb/public/2019/03/20/ivanka-trump-jared-kushner-donald-trump.jpg" alt="">
+                </div>
+                <h3>Kushner Used WhatsApp for White House Business: Lawyer</h3>
+                <p>House Oversight Committee Chairman Elijah Cummings is investigating allegations of possible violations of federal records laws by Jared Kushner and Ivanka Trump.</p>
+              </div>
             </div>
           </div>
         </div>
       </section>
-      <aside>
-        <div>
-          <h2>FEATURED STORIES</h2>
-        </div>
-        <div>
+      <aside class="container col-3">
+        <div class="content">
           <div>
-            <div>
-              <img src="https://s.newsweek.com/sites/www.newsweek.com/files/styles/sm/public/2018/05/09/israeli-soldier-golan-heights.jpg" alt="">
-            </div>
-            <div>
-              <h3>Trump Recognizes the Golan Heights as Israeli Territory</h3>
-            </div>
-            <div>
-              <p>
-                  Here’s what you need to know about the Golan Heights, a disputed land that sits between Israel and Syria.
-              </p>
-            </div>
-            <div>
-              <h3>Israel Warns 'Harsh Response' If Syria Enters Golan</h3>
-            </div>
+            <h2 class="h5">FEATURED STORIES</h2>
           </div>
           <div>
             <div>
-              <img src="https://s.newsweek.com/sites/www.newsweek.com/files/styles/sm/public/2018/01/17/0117bannon.jpg" alt="">
+              <div>
+                <img src="https://s.newsweek.com/sites/www.newsweek.com/files/styles/sm/public/2018/05/09/israeli-soldier-golan-heights.jpg" alt="">
+              </div>
+              <div>
+                <h3>Trump Recognizes the Golan Heights as Israeli Territory</h3>
+              </div>
+              <div>
+                <p>
+                    Here’s what you need to know about the Golan Heights, a disputed land that sits between Israel and Syria.
+                </p>
+              </div>
+              <div>
+                <h3>Israel Warns 'Harsh Response' If Syria Enters Golan</h3>
+              </div>
             </div>
             <div>
-              <h3>Bannon Accused of Discussing Nuclear Tech Over Email</h3>
-            </div>
-            <div>
-              <p>
-                  A letter from the House oversight committee's chairman alleges that Trump administration staff used personal email to discuss transferring sensitive nuclear technology to the Saudis.
-              </p>
-            </div>
-            <div>
-              <h3>Kushner Used WhatsApp for White House Business: Lawyer</h3>
+              <div>
+                <img src="https://s.newsweek.com/sites/www.newsweek.com/files/styles/sm/public/2018/01/17/0117bannon.jpg" alt="">
+              </div>
+              <div>
+                <h3>Bannon Accused of Discussing Nuclear Tech Over Email</h3>
+              </div>
+              <div>
+                <p>
+                    A letter from the House oversight committee's chairman alleges that Trump administration staff used personal email to discuss transferring sensitive nuclear technology to the Saudis.
+                </p>
+              </div>
+              <div>
+                <h3>Kushner Used WhatsApp for White House Business: Lawyer</h3>
+              </div>
             </div>
           </div>
         </div>
       </aside>
-      <aside>
-        <div>
-          <h3>OPINION</h3>
-        </div>
-        <div>
+      <aside class="col-3 order-3">
+        <div class="content">
           <div>
-            <div>
-              <img src="https://s.newsweek.com/sites/www.newsweek.com/files/styles/square_thumbnail/public/23544/profile_image/marc_schulman.png" alt="">
-            </div>
-            <div>
-              <h4>Sex and Submarines: Israeli Elections Plumb New Depths</h4>
-              <h4>BY MARC SCHULMAN</h4>
-            </div>
+            <h3 class="h5">OPINION</h3>
           </div>
           <div>
             <div>
-              <img src="https://s.newsweek.com/sites/www.newsweek.com/files/styles/square_thumbnail/public/23544/profile_image/nw-columnists-hazel-nyathi.png" alt="">
+              <div>
+                <img src="https://s.newsweek.com/sites/www.newsweek.com/files/styles/square_thumbnail/public/23544/profile_image/marc_schulman.png" alt="">
+              </div>
+              <div>
+                <h4>Sex and Submarines: Israeli Elections Plumb New Depths</h4>
+                <h4>BY MARC SCHULMAN</h4>
+              </div>
             </div>
             <div>
-              <h4>Cyclone Idai: We Mustn't Look Away</h4>
-              <h4>BY HAZEL NYATHI</h4>
+              <div>
+                <img src="https://s.newsweek.com/sites/www.newsweek.com/files/styles/square_thumbnail/public/23544/profile_image/nw-columnists-hazel-nyathi.png" alt="">
+              </div>
+              <div>
+                <h4>Cyclone Idai: We Mustn't Look Away</h4>
+                <h4>BY HAZEL NYATHI</h4>
+              </div>
             </div>
           </div>
         </div>
