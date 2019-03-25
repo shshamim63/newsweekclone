@@ -1,3 +1,65 @@
-.spc.bet{
-  justify-content: space-between;
+.w-full{
+  width: 100%;
+}
+img{
+  width: 100%;
+}
+/* small devices (mobile, 576px and up) */
+@media (min-width: 576px) {
+  .header-h{
+    height: 4rem;
+    margin: auto 0;
+  }
+  .hed{
+    margin: 0 2rem;
+  }
+  .nav-f-content{  
+    width: 75%;
+  }
+  .nav-f-heading{
+    font-size: 1.5rem;
+  }
+  .nav-f-date{
+    display: none;
+  }
+  .nav-f-search-par{
+    font-size: 1.2rem;
+    margin: auto 0;
+  }
+  .nav-f-search{
+    height: 75%;
+    margin: auto 0;
+  }
+  .nav-s{
+    margin: 0 0;
+  }
+  .nav-button{
+    color: white;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+}
+
+ /* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .aside-sec-img{
+    width: 25%;
+  }
+  .aside-sec-content{
+    width: 75%;
+  }
+  .main-lw-img{
+    height: 100px;
+    width: 40%;
+  }
+  .main-lw-content{
+    width: 80%;
+  }
+  .main-lw-btm{
+    padding-top: 20px;
+    padding-left: 200px;
+  }
+
 }

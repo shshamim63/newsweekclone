@@ -7,49 +7,50 @@
   <title>Document</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link rel="stylesheet" href="./assets/index.css">
 </head>
 <body>
-  <header class="mw-100 container">
-    <div class="bg-danger row p-3">
-      <div class="col text-white">Fri, Mar 22, 2019</div>
-      <div class="col h1 text-center text-white">Newsweek</div>
-      <div class="col">
-        <div class="float-right d-flex">
-          <p class="text-white">SIGN IN</p>
-          <button class="bg-white text-danger">SUBSCRIBE ></button>
+  <header class="w-full header-h bg-danger">
+    <div class="w-full hed d-sm-flex mt-auto">
+      <nav class="w-full nav-f-content d-sm-flex justify-content-between">
+        <div class="nav-f-date text-white">Fri, Mar 22, 2019</div>
+        <div class="nav-f-heading text-white">Newsweek</div>
+        <div class="d-sm-flex nav-f-search align-middle">
+          <p class="nav-f-search-par">SIGN IN</p>
+          <button class="nav-f-search-par">SUBSCRIBE></button>
         </div>
-      </div>
+      </nav>
+      <nav class="navbar navbar-expand-lg navbar-light nav-s bg-danger text-white">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <ul class="navbar-nav list-group list-group-horizontal-lg m-auto">
+            <li class="nav-item list-group-item active text-center">U.S</li>
+            <li class="nav-item list-group-item active text-center">World</li>
+            <li class="nav-item list-group-item active text-center">Business</li>
+            <li class="nav-item list-group-item active text-center">Tech & Science</li>
+            <li class="nav-item list-group-item active text-center">Culture</li>
+            <li class="nav-item list-group-item active text-center">Sports</li>
+            <li class="nav-item list-group-item active text-center">Health</li>
+            <li class="nav-item list-group-item active text-center">Opinion</li>
+            <li class="nav-item list-group-item active text-center">Ndelible</li>
+            <li class="nav-item active list-group-item">
+              <form class="input-group input-group-sm">
+                <input class="form-control" type="search" placeholder="Search">
+                <button class="btn btn-outline-danger btn-sm" type="submit"><i class="fas fa-search"></i></button>
+              </form>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </div>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-        <ul class="navbar-nav list-group list-group-horizontal m-auto">
-          <li class="nav-item list-group-item active text-center">U.S</li>
-          <li class="nav-item list-group-item active text-center">World</li>
-          <li class="nav-item list-group-item active text-center">Business</li>
-          <li class="nav-item list-group-item active text-center">Tech & Science</li>
-          <li class="nav-item list-group-item active text-center">Culture</li>
-          <li class="nav-item list-group-item active text-center">Sports</li>
-          <li class="nav-item list-group-item active text-center">Health</li>
-          <li class="nav-item list-group-item active text-center">Opinion</li>
-          <li class="nav-item list-group-item active text-center">Ndelible</li>
-          <li class="nav-item active list-group-item">
-            <form class="input-group input-group-sm">
-              <input class="form-control" type="search" placeholder="Search">
-              <button class="btn btn-outline-danger btn-sm" type="submit"><i class="fas fa-search"></i></button>
-            </form>
-          </li>
-        </ul>
-      </div>
-    </nav>
   </header>
-  <main class="container">
+  <main class="container-fluid">
     <div class="row">
-      <section class="col-6 order-2 just">
-        <div class="content">
-          <div class="mw-100">
+      <section class="col-lg-6 order-lg-2">
+        <div class="">
+          <div class="">
             <h3 class="h5">TOP STORY</h3>
           </div>
           <div class="mw-100">
@@ -96,7 +97,7 @@
           </div>
         </div>
       </section>
-      <aside class="container col-3">
+      <aside class="col-lg-3 order-lg-1">
         <div class="content">
           <div>
             <h2 class="h5">FEATURED STORIES</h2>
@@ -137,40 +138,40 @@
           </div>
         </div>
       </aside>
-      <aside class="col-3 order-3">
+      <aside class="col-lg-3 order-lg-3">
         <div class="content">
           <div>
             <h3 class="h5">OPINION</h3>
           </div>
-          <div>
-            <div>
-              <div>
+          <div class="container-fluid">
+            <div class="w-lg-100 d-lg-flex">
+              <div class="aside-sec-img">
                 <img src="https://s.newsweek.com/sites/www.newsweek.com/files/styles/square_thumbnail/public/23544/profile_image/marc_schulman.png" alt="">
               </div>
-              <div>
-                <h4>Sex and Submarines: Israeli Elections Plumb New Depths</h4>
-                <h4>BY MARC SCHULMAN</h4>
+              <div class="aside-sec-content">
+                <h4 class="h6">Sex and Submarines: Israeli Elections Plumb New Depths</h4>
+                <h4 class="h6">BY MARC SCHULMAN</h4>
               </div>
             </div>
-            <div>
-              <div>
+            <div class="w-lg-100 d-lg-flex">
+              <div class="aside-sec-img">
                 <img src="https://s.newsweek.com/sites/www.newsweek.com/files/styles/square_thumbnail/public/23544/profile_image/nw-columnists-hazel-nyathi.png" alt="">
               </div>
-              <div>
-                <h4>Cyclone Idai: We Mustn't Look Away</h4>
-                <h4>BY HAZEL NYATHI</h4>
+              <div class="aside-sec-content">
+                <h4 class="h6">Cyclone Idai: We Mustn't Look Away</h4>
+                <h4 class="h6">BY HAZEL NYATHI</h4>
               </div>
             </div>
           </div>
         </div>
       </aside>
     </div>
-    <div>
-      <div>
+    <div class="container-fluid">
+      <div class="text-center">
         <h2>IN THE MAGAZINE</h2>
       </div>
-      <div>
-        <div>
+      <div class="row">
+        <div class="col-lg-3">
           <div>
             <img src="https://s.newsweek.com/sites/www.newsweek.com/files/styles/embed_xs/public/2019/03/18/201903290405cover1800x2400.jpg" alt="">
           </div>
@@ -179,7 +180,7 @@
             <h3>SEE ALL FEATURES ></h3>
           </div>
         </div>
-        <div>
+        <div class="col-lg-3">
           <div>
             <img src="https://s.newsweek.com/sites/www.newsweek.com/files/styles/md_thumb/public/2019/03/19/fehospitalstop1000banner.jpg" alt="">
           </div>
@@ -188,7 +189,7 @@
             <h3>The 10 Best Hospitals in the World</h3>
           </div>
         </div>
-        <div>
+        <div class="col-lg-3">
           <div>
             <img src="https://s.newsweek.com/sites/www.newsweek.com/files/styles/md_thumb/public/2019/03/04/fewhiteidentity01619475022.jpg" alt="">
           </div>
@@ -197,7 +198,7 @@
             <h3>Make America White Again?</h3>
           </div>
         </div>
-        <div>
+        <div class="col-lg-3">
           <div>
             <img src="https://s.newsweek.com/sites/www.newsweek.com/files/styles/md_thumb/public/2019/02/26/doug-jones.jpg" alt="">
           </div>
@@ -206,7 +207,7 @@
             <h3>Doug Jones: The Republican Party Is Losing Its Soul</h3>
           </div>
         </div>
-        <div>
+        <div class="col-lg-3">
           <div>
             <img src="https://s.newsweek.com/sites/www.newsweek.com/files/styles/md_thumb/public/2019/02/21/feblockchain-impact-awardssimply-vital-health1062184620.jpg" alt="">
           </div>
@@ -215,7 +216,7 @@
             <h3>Introducing Blockchain Impact Winner SimplyVital Health</h3>
           </div>
         </div>
-        <div>
+        <div class="col-lg-3">
           <div>
             <img src="https://s.newsweek.com/sites/www.newsweek.com/files/styles/md_thumb/public/2019/02/21/feblockchain-impact-awardsprescrypto645424997banner.jpg" alt="">
           </div>
@@ -224,7 +225,7 @@
             <h3>Introducing Blockchain Impact Award Winner Prescrypto</h3>
           </div>
         </div>
-        <div>
+        <div class="col-lg-3">
           <div>
             <img src="https://s.newsweek.com/sites/www.newsweek.com/files/styles/md_thumb/public/2019/03/18/culkinglear01.jpg" alt="">
           </div>
@@ -233,7 +234,7 @@
             <h3>‘King Lear’ Never Gets Old</h3>
           </div>
         </div>
-        <div>
+        <div class="col-lg-3">
           <div>
             <img src="https://s.newsweek.com/sites/www.newsweek.com/files/styles/full/public/2019/03/12/infocus041129693662.jpg" alt="">
           </div>
@@ -244,137 +245,143 @@
         </div>
       </div>
     </div>
-    <div class="">
-      <div class="">
+    <div class="container-fluid">
+      <div class="text-center">
         <h2>U.S.</h2>
       </div>
-      <div class="">
-        <div class="">
-          <img src="https://s.newsweek.com/sites/www.newsweek.com/files/styles/sm/public/2019/03/21/gun-control-march-our-lives-protest.jpg" alt="">
-        </div>
-        <div class="">
-          <h3>Florida Advances Bill Allowing Teachers to be Armed</h3>
-        </div>
-      </div>
-      <div class="">
-        <div class="">
-          <img src="https://s.newsweek.com/sites/www.newsweek.com/files/styles/sm/public/2017/03/20/betsy-devos-donald-trump.JPG" alt="">
-        </div>
-        <div class="">
-          <h3>Trump Free Speech Order ‘Ironic,’ Advocates Say</h3>
-        </div>
-      </div>
-      <div class="">
-        <div class="">
+      <div class="row">
+        <div class="col-lg-4">
           <div class="">
-            <div class="">
-              <img src="https://s.newsweek.com/sites/www.newsweek.com/files/styles/sm_thumb/public/2019/03/21/screen-shot-2019-03-21-2_1.png" alt="">
-            </div>
-            <div class="">
-              <h3>Police: Priest Groped Woman During Last Rites</h3>
-            </div>
+            <img src="https://s.newsweek.com/sites/www.newsweek.com/files/styles/sm/public/2019/03/21/gun-control-march-our-lives-protest.jpg" alt="">
           </div>
           <div class="">
-            <div class="">
-              <img src="https://s.newsweek.com/sites/www.newsweek.com/files/styles/sm_thumb/public/2019/03/21/james-scandirito-jr-florida-man.jpg" alt="">
-            </div>
-            <div class="">
-              <h3>Man Says He Dismembered Dad, But Didn't Kill Him</h3>
-            </div>
+            <h3>Florida Advances Bill Allowing Teachers to be Armed</h3>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="">
+            <img src="https://s.newsweek.com/sites/www.newsweek.com/files/styles/sm/public/2017/03/20/betsy-devos-donald-trump.JPG" alt="">
           </div>
           <div class="">
-            <div class="">
-              <img src="https://s.newsweek.com/sites/www.newsweek.com/files/styles/sm_thumb/public/2019/03/21/aoc-financial-services-committee-hearing.jpg" alt="">
+            <h3>Trump Free Speech Order ‘Ironic,’ Advocates Say</h3>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="">
+            <div class="d-lg-flex">
+              <div class="main-lw-img">
+                <img src="https://s.newsweek.com/sites/www.newsweek.com/files/styles/sm_thumb/public/2019/03/21/screen-shot-2019-03-21-2_1.png" alt="">
+              </div>
+              <div class="main-lw-content">
+                <h3 class="h6">Police: Priest Groped Woman During Last Rites</h3>
+              </div>
             </div>
-            <div class="">
-              <h3>Ocasio-Cortez Slams Fox News for Saying Her Name Wrong</h3>
+            <div class="d-lg-flex">
+              <div class="main-lw-img">
+                <img src="https://s.newsweek.com/sites/www.newsweek.com/files/styles/sm_thumb/public/2019/03/21/james-scandirito-jr-florida-man.jpg" alt="">
+              </div>
+              <div class="main-lw-content">
+                <h3 class="h6">Man Says He Dismembered Dad, But Didn't Kill Him</h3>
+              </div>
+            </div>
+            <div class="d-lg-flex">
+              <div class="main-lw-img">
+                <img src="https://s.newsweek.com/sites/www.newsweek.com/files/styles/sm_thumb/public/2019/03/21/aoc-financial-services-committee-hearing.jpg" alt="">
+              </div>
+              <div class="main-lw-content">
+                <h3 class="h6">Ocasio-Cortez Slams Fox News for Saying Her Name Wrong</h3>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="">
-      <div class="">
-        <div class="">
-          <h2>SUBSCRIBE</h2>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="">
+            <h2 class="h6">SUBSCRIBE</h2>
+          </div>
+          <div class="">
+            <div class="row">
+              <div class="col-lg-5">
+                <img src="https://s.newsweek.com/sites/www.newsweek.com/themes/newsweek/images/package1.png" alt="">
+              </div>
+              <div class="col-lg-7">
+                <h2>Digital Only</h2>
+                <ul>
+                  <li>Free access to 40+ digital editions</li>
+                  <li>Website access</li>
+                  <li>Daily Newsletter</li>
+                </ul>
+              </div>
+            </div>
+            <hr>
+            <div class="row">
+              <div class="col-lg-5">
+                <img src="https://s.newsweek.com/sites/www.newsweek.com/themes/newsweek/images/package2.png" alt="">
+              </div>
+              <div class="col-lg-7">
+                <h2>Print & Digital</h2>
+                <ul>
+                  <li>Weekly magazine, delivered</li>
+                  <li>Daily Newsletter</li>
+                  <li>Website access</li>
+                </ul>
+              </div>
+            </div>
+            <div class="main-lw-btm">
+              <button type="button" name="button" class="btn-sm btn-danger">SUBSCRIBE ></button>
+            </div>
+          </div>
         </div>
-        <div class="">
-          <div class="">
-            <div class="">
-              <img src="https://s.newsweek.com/sites/www.newsweek.com/themes/newsweek/images/package1.png" alt="">
-            </div>
-            <div class="">
-              <h2>Digital Only</h2>
-              <ul>
-                <li>Free access to 40+ digital editions</li>
-                <li>Website access</li>
-                <li>Daily Newsletter</li>
-              </ul>
-            </div>
-          </div>
-          <div class="">
-            <div class="">
-              <img src="https://s.newsweek.com/sites/www.newsweek.com/themes/newsweek/images/package2.png" alt="">
-            </div>
-            <div class="">
-              <h2>Print & Digital</h2>
-              <ul>
-                <li>Weekly magazine, delivered</li>
-                <li>Daily Newsletter</li>
-                <li>Website access</li>
-              </ul>
-            </div>
-          </div>
-          <div class="">
-            <button type="button" name="button"></button>
-          </div>
-        </div>
-      </div>
-      <div class="">
+        <div class="col-lg-4">
 
-      </div>
-      <div class="">
-        <div class="">
-          <h2>MOST READ</h2>
         </div>
-        <div>
+        <div class="col-lg-4">
           <div class="">
-            <img src="https://s.newsweek.com/sites/www.newsweek.com/files/styles/thumbnail/public/2019/03/20/donald-trump-2020-vs-democrats-poll.jpg" alt="">
+            <h2 class="h6">MOST READ</h2>
           </div>
-          <div class="">
-            <h4>Donald Trump Bashes Solar Power and 'Windmills'</h4>
+          <div class="d-lg-flex">
+            <div class="main-lw-img">
+              <img src="https://s.newsweek.com/sites/www.newsweek.com/files/styles/thumbnail/public/2019/03/20/donald-trump-2020-vs-democrats-poll.jpg" alt="">
+            </div>
+            <div class="main-lw-content">
+              <h4 class="h6">Donald Trump Bashes Solar Power and 'Windmills'</h4>
+            </div>
           </div>
-        </div>
-        <div>
-          <div class="">
-            <img src="https://s.newsweek.com/sites/www.newsweek.com/files/styles/thumbnail/public/2019/02/04/gettyimages-999293112-594x594.jpg" alt="">
+          <!-- <div class="d-lg-flex">
+            <div class="main-lw-img">
+              <img src="https://s.newsweek.com/sites/www.newsweek.com/files/styles/thumbnail/public/2019/02/04/gettyimages-999293112-594x594.jpg" alt="">
+            </div>
+            <div class="main-lw-content">
+              <h4 class="h6">Trump Hit Head With Golf Club, Asked Caddy if He Did It</h4>
+            </div>
+          </div> -->
+          <div class="d-lg-flex">
+            <div class="main-lw-img">
+              <img src="https://s.newsweek.com/sites/www.newsweek.com/files/styles/thumbnail/public/2019/03/14/gettyimages-1130241521.jpg" alt="">
+            </div>
+            <div class="main-lw-content">
+              <h4 class="h6">Trump Should Fear N.Y. Feds Over Mueller: Preet Bharara</h4>
+            </div>
+            <br>
           </div>
-          <div class="">
-            <h4>Trump Hit Head With Golf Club, Asked Caddy if He Did It</h4>
+          <div class="d-lg-flex">
+            <div class="main-lw-img">
+              <img src="https://s.newsweek.com/sites/www.newsweek.com/files/styles/thumbnail/public/2019/03/21/keith-johnson-florida.png" alt="">
+            </div>
+            <div class="main-lw-content">
+              <h4 class="h6">Florida Man Shoved Woman Because He Wanted Egg Rolls</h4>
+            </div>
           </div>
-        </div>
-        <div>
-          <div class="">
-            <img src="https://s.newsweek.com/sites/www.newsweek.com/files/styles/thumbnail/public/2019/03/14/gettyimages-1130241521.jpg" alt="">
-          </div>
-          <div class="">
-            <h4>Trump Should Fear N.Y. Feds Over Mueller: Preet Bharara</h4>
-          </div>
-        </div>
-        <div>
-          <div class="">
-            <img src="https://s.newsweek.com/sites/www.newsweek.com/files/styles/thumbnail/public/2019/03/21/keith-johnson-florida.png" alt="">
-          </div>
-          <div class="">
-            <h4>Florida Man Shoved Woman Because He Wanted Egg Rolls</h4>
-          </div>
-        </div>
-        <div>
-          <div class="">
-            <img src="https://s.newsweek.com/sites/www.newsweek.com/files/styles/thumbnail/public/2018/12/19/gun-child-stock-getty.jpg" alt="">
-          </div>
-          <div class="">
-            <h4>Alarming Rise in Firearm Deaths Among American Children</h4>
+          <div class="d-lg-flex">
+            <div class="main-lw-img">
+              <img src="https://s.newsweek.com/sites/www.newsweek.com/files/styles/thumbnail/public/2018/12/19/gun-child-stock-getty.jpg" alt="">
+            </div>
+            <div class="main-lw-content">
+              <h4 class="h6">Alarming Rise in Firearm Deaths Among American Children</h4>
+            </div>
           </div>
         </div>
       </div>
