@@ -4,6 +4,9 @@
 img{
   width: 100%;
 }
+body{
+  font-family: 'Arimo', sans-serif;
+}
 /* small devices (mobile, 576px and up) */
 @media (min-width: 576px) {
   .header-h{
@@ -36,6 +39,7 @@ img{
   .nav-button{
     color: white;
   }
+
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -67,6 +71,49 @@ img{
   .nav li {
         margin-left : .5em;
         margin-right : .5em;
+  }
+  .nav-s-date{
+    width: 15%;
+    font-size: 16px;
+    color:white;
+    font-family: 'Arimo', sans-serif;
+  }
+  .nav-s-name{
+    width:50%;
+    color:white;
+    font-family: 'Merriweather', serif;
+  }
+  .nav-s-button{
+    width: 25%;
+    color: white;
+    font-weight: bold;
+  }
+  .nav-s-button-item{
+    height: 2rem;
+    float: right;
+  }
+  .nav-s-button-sign{
+    margin-top:0.4rem;
+    font-family: 'Arimo', sans-serif;
+  }
+  .nav-s-button-btn{
+    color: brown;
+  }
+  .nav-sec-item{
+    font-size: 20px;
+    font-weight: bold;
+  }
+  p{
+    font-size: 15px;
+  }
+  .main-heading{
+    font-size: 14px;
+    font-weight: bold;
+    color:lightslategray;
+  }
+  .author-name{
+    font-size: 12px;
+    color: lightslategray;
   }
 
 }
