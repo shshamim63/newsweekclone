@@ -7,6 +7,17 @@ img{
 body{
   font-family: 'Arimo', sans-serif;
 }
+.bot-check li:before {
+  content: '✓';
+}
+.bot-check {
+  list-style-type: none;
+}
+.bot-tit {
+  font-size: 45px;
+  color: red;
+  font-weight: bold;
+}
 /* small devices (mobile, 576px and up) */
 @media (min-width: 576px) {
   .header-h{
