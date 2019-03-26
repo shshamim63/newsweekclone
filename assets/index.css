@@ -13,7 +13,7 @@ img{
   .hed{
     margin: 0 2rem;
   }
-  .nav-f-content{  
+  .nav-f-content{
     width: 75%;
   }
   .nav-f-heading{
@@ -60,6 +60,13 @@ img{
   .main-lw-btm{
     padding-top: 20px;
     padding-left: 200px;
+  }
+  .w-footer {
+    width: 40%
+  }
+  .nav li {
+        margin-left : .5em;
+        margin-right : .5em;
   }
 
 }
