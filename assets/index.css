@@ -18,8 +18,8 @@ body{
   color: red;
   font-weight: bold;
 }
-/* small devices (mobile, 576px and up) */
-@media (min-width: 576px) {
+
+@media (max-width: 575.98px) {
   .header-h{
     height: 4rem;
     margin: auto 0;
@@ -50,15 +50,221 @@ body{
   .nav-button{
     color: white;
   }
-
+  .d-hid{
+    display: none;
+  }
+  .nav-s-date{
+    display: none;
+  }
+  .dd-flex{
+    display: flex;
+  }
+  .nav-sw{
+    width: 85%;
+  }
+  .nav-swn{
+    width: 60%;
+  }
+  .nav-swb{
+    width: 35%;
+  }
+  .nav-swbt{
+    float: right;
+    height: 75%;
+  }
+  .nav-nav-sw{
+    width:10%; 
+  }
+  .nav-s-button-sign{
+    margin-top: 1.2rem;
+    padding-right: 13px;
+    color: white;
+    font-family: 'Arimo', sans-serif;
+  }
+  .nav-s-button-btn{
+    margin-top: 0.8rem;
+    color: brown;
+    font-weight: bold;
+  }
+  .main-heading{
+    font-size: 14px;
+    font-weight: bold;
+    color:lightslategray;
+  }
+  .aside-sec-img{
+    width: 25%;
+  }
+  .aside-sec-content{
+    width: 75%;
+  }
+  .author-name{
+    font-size: 12px;
+    color: lightslategray;
+  }
+  .main-lw-img{
+    height: 100px;
+    width: 40%;
+  }
+  .main-lw-content{
+    width: 80%;
+  }
+}
+/* small devices (mobile, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .header-h{
+    height: 4rem;
+    margin: auto 0;
+  }
+  .hed{
+    margin: 0 2rem;
+  }
+  .nav-f-content{
+    width: 75%;
+  }
+  .nav-f-heading{
+    font-size: 1.5rem;
+  }
+  .nav-f-date{
+    display: none;
+  }
+  .nav-f-search-par{
+    font-size: 1.2rem;
+    margin: auto 0;
+  }
+  .nav-f-search{
+    height: 75%;
+    margin: auto 0;
+  }
+  .nav-s{
+    margin: 0 0;
+  }
+  .nav-button{
+    color: white;
+  }
+  .d-hid{
+    display: none;
+  }
+  .nav-s-date{
+    display: none;
+  }
+  .dd-flex{
+    display: flex;
+  }
+  .nav-sw{
+    width: 85%;
+  }
+  .nav-swn{
+    width: 60%;
+  }
+  .nav-swb{
+    width: 35%;
+  }
+  .nav-swbt{
+    float: right;
+    height: 75%;
+  }
+  .nav-nav-sw{
+    width:10%; 
+  }
+  .nav-s-button-sign{
+    margin-top: 1.2rem;
+    padding-right: 13px;
+    color: white;
+    font-family: 'Arimo', sans-serif;
+  }
+  .nav-s-button-btn{
+    margin-top: 0.8rem;
+    color: brown;
+    font-weight: bold;
+  }
+  .main-heading{
+    font-size: 14px;
+    font-weight: bold;
+    color:lightslategray;
+  }
+  .aside-sec-img{
+    width: 25%;
+  }
+  .aside-sec-content{
+    width: 75%;
+  }
+  .author-name{
+    font-size: 12px;
+    color: lightslategray;
+  }
+  .main-lw-img{
+    height: 100px;
+    width: 40%;
+  }
+  .main-lw-content{
+    width: 80%;
+  }
 }
 
 /* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .d-hid{
+    display: none;
+  }
+  .nav-s-date{
+    display: none;
+  }
+  .dd-flex{
+    display: flex;
+  }
+  .nav-sw{
+    width: 85%;
+  }
+  .nav-swn{
+    width: 60%;
+  }
+  .nav-swb{
+    width: 35%;
+  }
+  .nav-swbt{
+    float: right;
+    height: 75%;
+  }
+  .nav-nav-sw{
+    width:10%; 
+  }
+  .nav-s-button-sign{
+    margin-top: 1.2rem;
+    padding-right: 13px;
+    color: white;
+    font-family: 'Arimo', sans-serif;
+  }
+  .nav-s-button-btn{
+    margin-top: 0.8rem;
+    color: brown;
+    font-weight: bold;
+  }
+  .main-heading{
+    font-size: 14px;
+    font-weight: bold;
+    color:lightslategray;
+  }
+  .aside-sec-img{
+    width: 25%;
+  }
+  .aside-sec-content{
+    width: 75%;
+  }
+  .author-name{
+    font-size: 12px;
+    color: lightslategray;
+  }
+  .main-lw-img{
+    height: 100px;
+    width: 40%;
+  }
+  .main-lw-content{
+    width: 80%;
+  }
 }
 
  /* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
+ @media (min-width: 992px) and (max-width: 1199.98px) {
   .aside-sec-img{
     width: 25%;
   }
@@ -84,6 +290,7 @@ body{
         margin-right : .5em;
   }
   .nav-s-date{
+    display: block;
     width: 15%;
     font-size: 16px;
     color:white;
@@ -110,9 +317,73 @@ body{
   .nav-s-button-btn{
     color: brown;
   }
-  .nav-sec-item{
-    font-size: 20px;
+  p{
+    font-size: 15px;
+  }
+  .main-heading{
+    font-size: 14px;
     font-weight: bold;
+    color:lightslategray;
+  }
+  .author-name{
+    font-size: 12px;
+    color: lightslategray;
+  }
+
+}
+ /* Large devices (desktops, 992px and up) */
+ @media (min-width: 1200px) {
+  .aside-sec-img{
+    width: 25%;
+  }
+  .aside-sec-content{
+    width: 75%;
+  }
+  .main-lw-img{
+    height: 100px;
+    width: 40%;
+  }
+  .main-lw-content{
+    width: 80%;
+  }
+  .main-lw-btm{
+    padding-top: 20px;
+    padding-left: 200px;
+  }
+  .w-footer {
+    width: 40%
+  }
+  .nav li {
+        margin-left : .5em;
+        margin-right : .5em;
+  }
+  .nav-s-date{
+    display: block;
+    width: 15%;
+    font-size: 16px;
+    color:white;
+    font-family: 'Arimo', sans-serif;
+  }
+  .nav-s-name{
+    width:50%;
+    color:white;
+    font-family: 'Merriweather', serif;
+  }
+  .nav-s-button{
+    width: 25%;
+    color: white;
+    font-weight: bold;
+  }
+  .nav-s-button-item{
+    height: 2rem;
+    float: right;
+  }
+  .nav-s-button-sign{
+    margin-top:0.4rem;
+    font-family: 'Arimo', sans-serif;
+  }
+  .nav-s-button-btn{
+    color: brown;
   }
   p{
     font-size: 15px;
