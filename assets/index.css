@@ -7,6 +7,10 @@ img{
 body{
   font-family: 'Arimo', sans-serif;
 }
+.bot-tit{
+  font-weight: bolder;
+  font-size: 235%;
+}
 
 a {
   text-decoration: none !important;
@@ -76,7 +80,9 @@ GENERAL STYLES
 /*
 END GENERAL STYLES
 */
-
+.top-dis{
+  margin-top: 40px;
+}
 /* START Navigation */
 
 #main-left-nav .nav-item {
@@ -190,19 +196,10 @@ END GENERAL STYLES
 
 /* END Navigation */
 
+.extra-spc{
+  margin-right: 3%;
+}
 
-
-.bot-check li:before {
-  content: '✓';
-}
-.bot-check {
-  list-style-type: none;
-}
-.bot-tit {
-  font-size: 45px;
-  color: red;
-  font-weight: bold;
-}
 #main-nav .nav-item .btm-sm {
   padding: 0 !important;
 }
