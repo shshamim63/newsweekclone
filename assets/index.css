@@ -75,7 +75,7 @@ GENERAL STYLES
   background: url(https://s.newsweek.com/sites/www.newsweek.com/themes/newsweek/images/logo-n1.svg) center/contain no-repeat #f72210;
   position: relative;
   margin-right: 10px;
-  
+
 }
 /*
 END GENERAL STYLES
@@ -156,15 +156,15 @@ END GENERAL STYLES
 }
 #sub-nav .nav {
   line-height: 24px;
-  flex-grow: 1;    
+  flex-grow: 1;
 }
 #sub-nav .nav .nav-item {
   border-left: 1px solid #d9d9d9;
-  flex-grow: 1;  
+  flex-grow: 1;
 }
 #sub-nav .nav .nav-item a {
   text-align: center;
-  padding: 0 0.1rem;
+  padding: 0 0.05rem;
   font-size: 100%;
   font-weight: 700;
   color: black;
@@ -534,7 +534,7 @@ END GENERAL STYLES
   #main-left-nav .nav-item {
     font-size: 1.1rem;
   }
-  
+
   p{
     font-size: 15px;
   }
