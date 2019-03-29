@@ -19,4 +19,4 @@
 ---
 # Live Demo
 
-Click [here](https://raw.githack.com/shshamim63/newsweekclone/development/index.html) to see the latest updates.
+Click [here](https://shshamim63.github.io/newsweekclone/.) to see the latest updates.
