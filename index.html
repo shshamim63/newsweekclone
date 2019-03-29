@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Arimo:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/index.css">
+</head>
+<body>
+  <header>
+    <nav id="main-nav" class="navbar navbar-expand-lg navbar-light bg-red d-sm-flex d-md-flex align-content-center">
+      <div id="date" class="d-none d-lg-block"> <span>Thu, Feb 14, 2019</span></div>
+      <a class="navbar-brand" href="#">
+          <svg width="130" height="20"  version="1.1" color="white" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 395.6 60" style="enable-background:new 0 0 395.6 60;" xml:space="preserve"><g><path class="st0" d="M58.7,10.8h-5.6v48.3H42.8l-25.1-33v22.1h5.6v10.8H0V48.3h5.6V10.8H0V0h17.6L41,30.7V10.8h-5.6V0h23.2	L58.7,10.8L58.7,10.8z M95.8,38c0,0.9,0,1.8-0.1,2.7H70.3c-0.7,8.2,2.4,10.6,7.1,10.6c3.9,0,6.9-2.6,6.9-6.6h11	c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1c0-10.5,7-21.6,21-21.6C89.9,16.3,95.8,25.6,95.8,38 M159,27.3h-3.7	l-9.4,31.8h-12.5l-5.9-17.4l-5.3,17.4h-12.8L98.8,27.4h-3.7V16.6h22.1v10.7h-5.6l5.8,16.9l7.6-27.6h6.8l9.3,27.6l5-16.9h-5.6V16.6	H159L159,27.3L159,27.3z M174.5,27.8c0,1.5,1.2,2.5,5.4,3.9l6,2c5.5,1.8,12.1,5.9,12.1,13.4c0,8.8-6.6,13-14.7,13	c-6.5,0-11.5-3.2-12.9-4.6V59h-10.8V44.4h10.6c0.3,4.8,4.6,7.3,8.5,7.3c3.2,0,4.7-1.4,4.7-3c0-2-1.2-3.1-6.5-4.8l-5.3-1.8	c-5.4-1.7-11.4-5.7-11.4-12.8c0-8.7,7.7-13.1,14.3-13.1c6.8,0,10.1,1.9,11.8,3.8l0.1-3.3H197v13.3h-11.2c-0.2-3.6-3.7-5.2-7.2-5.2	C175.8,24.8,174.5,26.1,174.5,27.8 M262.8,27.3h-3.7l-9.4,31.8h-12.5l-5.9-17.4L226,59.1h-12.8l-10.6-31.7h-3.7V16.6h22.1v10.7	h-5.6l5.8,16.9l7.6-27.6h6.8l9.3,27.7l5-16.9h-5.6V16.6h18.5V27.3z M302,37.9c0,0.9,0,1.8-0.1,2.7h-25.4	c-0.7,8.2,2.4,10.6,7.1,10.6c3.9,0,6.9-2.6,6.9-6.6h11c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1	c0-10.5,7-21.6,21-21.6C296.1,16.2,302,25.5,302,37.9 M343.9,37.8c0,0.9,0,1.8-0.1,2.7h-25.4c-0.7,8.2,2.4,10.6,7.1,10.6	c3.9,0,6.9-2.6,6.9-6.6h11c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1c0-10.5,7-21.6,21-21.6	C338,16.1,343.9,25.4,343.9,37.8 M389.9,59h-12.8l-13.3-17.3l-4.3,3.2v3.4h3.8V59h-19.6V48.3h3.7V10.6h-5.6V0h17.8v33.9l8.9-6.5	h-5.6V16.6h23.9v10.8h-3.7l-9.3,7l10.7,13.9h5.6L389.9,59L389.9,59z M395.6,56.6c0,0.5-0.1,0.9-0.4,1.2c-0.2,0.4-0.5,0.7-0.9,0.9	c-0.4,0.2-0.8,0.4-1.3,0.4c-0.5,0-0.9-0.1-1.2-0.4c-0.4-0.2-0.7-0.5-0.9-0.9c-0.2-0.4-0.4-0.8-0.4-1.2c0-0.5,0.1-0.9,0.4-1.2	c0.2-0.4,0.5-0.7,0.9-0.9c0.4-0.2,0.8-0.4,1.2-0.4c0.5,0,0.9,0.1,1.3,0.4c0.4,0.2,0.7,0.5,0.9,0.9	C395.5,55.8,395.6,56.2,395.6,56.6 M394.6,58c0.4-0.4,0.6-0.9,0.6-1.4c0-0.6-0.2-1-0.6-1.4s-0.9-0.6-1.4-0.6s-1,0.2-1.4,0.6	c-0.4,0.4-0.6,0.9-0.6,1.4c0,0.6,0.2,1,0.6,1.4c0.4,0.4,0.9,0.6,1.4,0.6S394.2,58.4,394.6,58 M393.6,56.8c0.1,0.1,0.2,0.1,0.2,0.1	c0.1,0.1,0.2,0.2,0.2,0.3c0,0,0.2,0.3,0.4,0.8h-0.8c-0.3-0.5-0.4-0.8-0.5-0.9c-0.1-0.1-0.2-0.2-0.3-0.2c0,0-0.1,0-0.1,0v1.1h-0.6	v-2.6h1.2c0.4,0,0.6,0.1,0.7,0.2c0.2,0.2,0.2,0.3,0.2,0.6c0,0.2-0.1,0.4-0.2,0.5C393.9,56.6,393.8,56.7,393.6,56.8 M393.5,56.3	c0.1-0.1,0.1-0.2,0.1-0.3s-0.1-0.2-0.1-0.3c-0.1-0.1-0.2-0.1-0.4-0.1h-0.3v0.7h0.3C393.3,56.4,393.4,56.4,393.5,56.3 M318.4,33.5	h13.9c0-6-3.9-8.4-6.8-8.4C322.1,25.2,318.6,27.9,318.4,33.5 M276.5,33.6h13.9c0-6-3.9-8.4-6.8-8.4C280.3,25.2,276.8,28,276.5,33.6 M70.3,33.7h13.9c0-6-3.9-8.4-6.8-8.4C74.1,25.3,70.6,28.1,70.3,33.7"></path></g></svg>
+      </a>
+
+      <ul id="main-left-nav" class="nav ml-auto">
+          <li class="nav-item">
+              <a href="#" class="nav-link text-white text-uppercase" id="sign-in">
+                  Sign In
+              </a>
+          </li>
+          <li class="nav-item">
+              <a href="#" class="nav-item btn btn-sm bg-white text-red font-weight-bold text-uppercase" id="subscribe">
+                  Subscribe <i class="fas fa-angle-right"></i>
+              </a>
+          </li>
+      </ul>
+      <a href="#" class="side-nav-toggler d-lg-none" data-toggle="collapse" data-target="#sidebar-toggler"
+          aria-controls="sidebar-toggler">
+          <i class="fas fa-bars"></i>
+      </a>
+    </nav>
+    <nav id="sub-nav" class="navbar d-none d-lg-flex">
+      <ul class="nav d-flex">
+        <li class="nav-item">
+            <a href="#" class="nav-link">
+                <span>U.S.</span>
+            </a>
+
+        </li>
+
+        <li class="nav-item px-2">
+            <a href="#" class="nav-link">
+                <span>World</span>
+            </a>
+        </li>
+        <li class="nav-item px-2">
+            <a href="#" class="nav-link">
+                <span>Business</span>
+            </a>
+        </li>
+        <li class="nav-item px-2">
+            <a href="#" class="nav-link">
+                <span>Tech & Science</span>
+            </a>
+        </li>
+        <li class="nav-item px-2">
+            <a href="#" class="nav-link">
+                <span>Culture</span>
+            </a>
+        </li>
+        <li class="nav-item px-2">
+            <a href="#" class="nav-link">
+                <span>Sports</span>
+
+            </a>
+        </li>
+        <li class="nav-item px-2">
+            <a href="#" class="nav-link">
+                <span>Health</span>
+
+            </a>
+        </li>
+        <li class="nav-item px-2">
+            <a href="#" class="nav-link">
+                <span>Opinion</span>
+
+            </a>
+        </li>
+        <li class="nav-item px-2">
+            <a href="#" class="nav-link">
+                <span>Ndelible</span>
+
+            </a>
+        </li>
+      </ul>
+      <form id="sub-search" class="form-inline">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <i class="fas fa-search"></i>
+      </form>
+    </nav>
+    <div id="sidebar-toggler" class="collapse">
+      <form class="form-inline my-2 my-lg-0 pl-2">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <i class="fas fa-search"></i>
+      </form>
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+            <a href="#" class="nav-link d-flex justify-content-between pl-2 pr-3">
+                <span>U.S.</span>
+                <i class="fas fa-angle-right"></i>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link d-flex justify-content-between pl-2 pr-3">
+                <span>World</span>
+                <i class="fas fa-angle-right"></i>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link d-flex justify-content-between pl-2 pr-3">
+                <span>Business</span>
+                <i class="fas fa-angle-right"></i>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link d-flex justify-content-between pl-2 pr-3">
+                <span>Tech & Science</span>
+                <i class="fas fa-angle-right"></i>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link d-flex justify-content-between pl-2 pr-3">
+                <span>Culture</span>
+                <i class="fas fa-angle-right"></i>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link d-flex justify-content-between pl-2 pr-3">
+                <span>Sports</span>
+                <i class="fas fa-angle-right"></i>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link d-flex justify-content-between pl-2 pr-3">
+                <span>Health</span>
+                <i class="fas fa-angle-right"></i>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link d-flex justify-content-between pl-2 pr-3">
+                <span>Opinion</span>
+                <i class="fas fa-angle-right"></i>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link d-flex justify-content-between pl-2 pr-3">
+                <span>Ndelible</span>
+                <i class="fas fa-angle-right"></i>
+            </a>
+        </li>
+      </ul>
+    </div>
+  </header>
+  <br>
+  <main class="container-fluid">
+    <div class="row">
+      <section class="col-lg-6 order-lg-2 col-md-7 order-md-2">
+        <div class="container-fluid">
+          <div class="container-fluid">
+            <h3 class="main-heading">TOP STORY</h3>
+          </div>
+          <div class="mw-100">
+            <div class="mw-100">
+              <img src="https://s.newsweek.com/sites/www.newsweek.com/files/styles/md/public/2018/12/10/gettyimages-1000086024.jpg" alt="" class="mw-60">
+            </div>
+            <div>
+              <h3 class="h5 font-weight-bold">WH Refuses to Give Congress Trump-Putin Communications</h3>
+              <p>“The President must be free to engage in discussions with foreign leaders without fear that those communications will be disclosed and used as fodder for partisan political purposes,” the White House counsel wrote in a letter to congressional committee chairmen.</p>
+            </div>
+            <hr>
+            <div class="container-fluid">
+              <h3 class="h6 font-weight-bold">U.S. Creates 'Tensions' by Flying Bombers Near Russia</h3>
+            </div>
+            <hr>
+          </div>
+          <div class="container-fluid">
+            <div class="">
+              <h4 class="main-heading">MORE STORIES</h4>
+            </div>
+            <div class="">
+              <div class="">
+                <div class="mw-25 float-left">
+                  <img src="https://s.newsweek.com/sites/www.newsweek.com/files/styles/sm_thumb/public/2013/11/26/b52_0.jpg" alt="" class="mw-100 pr-lg-2">
+                </div>
+                <h3 class="h6 font-weight-bold">U.S. Creates 'Tensions' by Flying Bombers Near Russia</h3>
+                <p>Kremlin spokesperson Dmitry Peskov said "such actions by the United States do not lead to a strengthening of an atmosphere of security and stability in the region."</p>
+              </div>
+              <hr>
+              <div>
+                <div class="mw-25 float-left">
+                  <img src="https://s.newsweek.com/sites/www.newsweek.com/files/styles/sm_thumb/public/2019/03/21/gettyimages-1131500079-594x594.jpg" alt="" class="mw-60 pr-lg-2">
+                </div>
+                <h3 class="h6 font-weight-bold">Democrat: Trump May Have Committed Bank Fraud</h3>
+                <p>New York’s attorney general subpoenaed Deutsche Bank this month for information about Trump’s financial records, and a congressional probe is coming, says Democratic Representative Ted Lieu.</p>
+              </div>
+              <hr>
+              <div>
+                <div class="mw-25 float-left">
+                  <img src="https://s.newsweek.com/sites/www.newsweek.com/files/styles/sm_thumb/public/2019/03/20/ivanka-trump-jared-kushner-donald-trump.jpg" alt="" class="mw-60 pr-lg-2">
+                </div>
+                <h3 class="h6 font-weight-bold">Kushner Used WhatsApp for White House Business: Lawyer</h3>
+                <p>House Oversight Committee Chairman Elijah Cummings is investigating allegations of possible violations of federal records laws by Jared Kushner and Ivanka Trump.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <aside class="col-lg-3 order-lg-1 col-md-5 order-md-1">
+        <div class="container">
+          <div>
+            <h2 class="main-heading">FEATURED STORIES</h2>
+          </div>
+          <div>
+            <div>
+              <div>
+                <img src="https://s.newsweek.com/sites/www.newsweek.com/files/styles/sm/public/2018/05/09/israeli-soldier-golan-heights.jpg" alt="">
+              </div>
+              <div>
+                <h5 class="font-weight-bold">Trump Recognizes the Golan Heights as Israeli Territory</h5>
+              </div>
+              <div>
+                <p>
+                    Here’s what you need to know about the Golan Heights, a disputed land that sits between Israel and Syria.
+                </p>
+                <hr>
+              </div>
+              <div>
+                <h5 class="font-weight-bold">Israel Warns 'Harsh Response' If Syria Enters Golan</h5>
+                <hr>
+              </div>
+            </div>
+            <div>
+              <div>
+                <img src="https://s.newsweek.com/sites/www.newsweek.com/files/styles/sm/public/2018/01/17/0117bannon.jpg" alt="">
+              </div>
+              <div>
+                <h5 class="font-weight-bold">Bannon Accused of Discussing Nuclear Tech Over Email</h5>
+              </div>
+              <div>
+                <p>
+                    A letter from the House oversight committee's chairman alleges that Trump administration staff used personal email to discuss transferring sensitive nuclear technology to the Saudis.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </aside>
+      <aside class="col-lg-3 order-lg-3 order-md-3">
+        <div class="content">
+          <div>
+            <h3 class="main-heading">OPINION</h3>
+          </div>
+          <div class="container-fluid">
+            <div class="w-100 d-flex">
+              <div class="aside-sec-img pr-2">
+                <img src="https://s.newsweek.com/sites/www.newsweek.com/files/styles/square_thumbnail/public/23544/profile_image/marc_schulman.png" alt="">
+              </div>
+              <div class="aside-sec-content">
+                <h6 class="font-weight-bold">Sex and Submarines: Israeli Elections Plumb New Depths</h6>
+                <h6 class="author-name font-weight-bold">BY MARC SCHULMAN</h6>
+              </div>
+            </div>
+            <div class="w-lg-100 d-flex">
+              <div class="aside-sec-img pr-2">
+                <img src="https://s.newsweek.com/sites/www.newsweek.com/files/styles/square_thumbnail/public/23544/profile_image/nw-columnists-hazel-nyathi.png" alt="">
+              </div>
+              <div class="aside-sec-content">
+                <h6 class="font-weight-bold">Cyclone Idai: We Mustn't Look Away</h6>
+                <h6 class="author-name font-weight-bold">BY HAZEL NYATHI</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </div>
+    <div class="container-fluid">
+      <div class="text-center">
+        <h2>IN THE MAGAZINE</h2>
+      </div>
+      <div class="row">
+        <div class="col-md-3">
+          <div>
+            <img src="https://s.newsweek.com/sites/www.newsweek.com/files/styles/embed_xs/public/2019/03/18/201903290405cover1800x2400.jpg" alt="">
+          </div>
+          <div>
+            <h4 class="h6 ">APRIL 05 ISSUE</h4>
+            <h3 class="h5 font-weight-bold">SEE ALL FEATURES ></h3>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div>
+            <img src="https://s.newsweek.com/sites/www.newsweek.com/files/styles/md_thumb/public/2019/03/19/fehospitalstop1000banner.jpg" alt="">
+          </div>
+          <div>
+            <h4 class="h6 text-danger font-weight-bold"><span class="bg-danger text-white">COVER</span>  HEALTH</h4>
+            <h3 class="h5 font-weight-bold">The 10 Best Hospitals in the World</h3>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div>
+            <img src="https://s.newsweek.com/sites/www.newsweek.com/files/styles/md_thumb/public/2019/03/04/fewhiteidentity01619475022.jpg" alt="">
+          </div>
+          <div>
+            <h4 class="h6 text-danger font-weight-bold"><span class="bg-danger text-white">COVER</span>  U.S.</h4>
+            <h3 class="h5 font-weight-bold">Make America White Again?</h3>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div>
+            <img src="https://s.newsweek.com/sites/www.newsweek.com/files/styles/md_thumb/public/2019/02/26/doug-jones.jpg" alt="">
+          </div>
+          <div>
+            <h4 class="h6 text-danger font-weight-bold"><span class="bg-danger text-white">DOWNLOADS</span>  U.S.</h4>
+            <h3 class="h5 font-weight-bold">Doug Jones: The Republican Party Is Losing Its Soul</h3>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div>
+            <img src="https://s.newsweek.com/sites/www.newsweek.com/files/styles/md_thumb/public/2019/02/21/feblockchain-impact-awardssimply-vital-health1062184620.jpg" alt="">
+          </div>
+          <div>
+            <h4 class="h6 text-danger font-weight-bold"><span class="bg-danger text-white">FEATURES</span>  TECH & SCIENCE</h4>
+            <h3 class="h5 font-weight-bold">Introducing Blockchain Impact Winner SimplyVital Health</h3>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div>
+            <img src="https://s.newsweek.com/sites/www.newsweek.com/files/styles/md_thumb/public/2019/02/21/feblockchain-impact-awardsprescrypto645424997banner.jpg" alt="">
+          </div>
+          <div>
+            <h4 class="h6 text-danger font-weight-bold"><span class="bg-danger text-white">FEATURES </span>  TECH & SCIENCE</h4>
+            <h3 class="h5 font-weight-bold">Introducing Blockchain Impact Award Winner Prescrypto</h3>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div>
+            <img src="https://s.newsweek.com/sites/www.newsweek.com/files/styles/md_thumb/public/2019/03/18/culkinglear01.jpg" alt="">
+          </div>
+          <div>
+            <h4 class="h6 text-danger font-weight-bold"><span class="bg-danger text-white">DOWNTIME</span>  CULTURE</h4>
+            <h3 class="h5 font-weight-bold">‘King Lear’ Never Gets Old</h3>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div>
+            <img src="https://s.newsweek.com/sites/www.newsweek.com/files/styles/full/public/2019/03/12/infocus041129693662.jpg" alt="">
+          </div>
+          <div>
+            <h4 class="h6 text-danger font-weight-bold"><span class="bg-danger text-white">  BIG SHOTS</span></h4>
+            <h3 class="h5 font-weight-bold">DOUBLE TROUBLE</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="text-center">
+        <h2>U.S.</h2>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="">
+            <img src="https://s.newsweek.com/sites/www.newsweek.com/files/styles/sm/public/2019/03/21/gun-control-march-our-lives-protest.jpg" alt="">
+          </div>
+          <div class="">
+            <h3>Florida Advances Bill Allowing Teachers to be Armed</h3>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="">
+            <img src="https://s.newsweek.com/sites/www.newsweek.com/files/styles/sm/public/2017/03/20/betsy-devos-donald-trump.JPG" alt="">
+          </div>
+          <div class="">
+            <h3>Trump Free Speech Order ‘Ironic,’ Advocates Say</h3>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="">
+            <div class="d-flex">
+              <div class="main-lw-img pr-2">
+                <img src="https://s.newsweek.com/sites/www.newsweek.com/files/styles/sm_thumb/public/2019/03/21/screen-shot-2019-03-21-2_1.png" alt="">
+              </div>
+              <div class="main-lw-content">
+                <h3 class="h6">Police: Priest Groped Woman During Last Rites</h3>
+              </div>
+            </div>
+            <div class="d-flex">
+              <div class="main-lw-img pr-2">
+                <img src="https://s.newsweek.com/sites/www.newsweek.com/files/styles/sm_thumb/public/2019/03/21/james-scandirito-jr-florida-man.jpg" alt="">
+              </div>
+              <div class="main-lw-content">
+                <h3 class="h6">Man Says He Dismembered Dad, But Didn't Kill Him</h3>
+              </div>
+            </div>
+            <div class="d-flex">
+              <div class="main-lw-img pr-2">
+                <img src="https://s.newsweek.com/sites/www.newsweek.com/files/styles/sm_thumb/public/2019/03/21/aoc-financial-services-committee-hearing.jpg" alt="">
+              </div>
+              <div class="main-lw-content">
+                <h3 class="h6">Ocasio-Cortez Slams Fox News for Saying Her Name Wrong</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="container-fluid ">
+    <div class="top-dis">
+      <div class="row">
+        <div class="col-md-6 d-md-flex">
+          <h2 class="bot-tit text-danger">Newsweek</h2>
+          <p class="pt-md-3 pl-md-3">© 2019 NEWSWEEK</p>
+        </div>
+        <div class="col-md-6">
+          <ul class="nav justify-content-end nav-sec-item">
+            <li class="nav-item extra-spc"><i class="fab fa-facebook"></i></li>
+            <li class="nav-item extra-spc"><i class="fab fa-twitter-square"></i></li>
+            <li class="nav-item extra-spc"><i class="fab fa-google-plus-g"></i></li>
+            <li class="nav-item extra-spc"><i class="fab fa-instagram"></i></li>
+            <li class="nav-item extra-spc"><i class="fab fa-tumblr"></i></li>
+            <li class="nav-item extra-spc"><i class="fab fa-linkedin-in"></i></li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="col-md-7">
+          <ul class="nav">
+            <li class="nav-item extra-spc">About Us</li>
+            <li class="nav-item extra-spc">Corrections</li>
+            <li class="nav-item extra-spc">Contact Us</li>
+            <li class="nav-item extra-spc">Editorial Guidelines</li>
+            <li class="nav-item extra-spc">Advertise</li>
+            <li class="nav-item extra-spc">Copyright</li>
+            <li class="nav-item extra-spc">Terms & Conditions</li>
+            <li class="nav-item extra-spc">Privacy Policy</li>
+            <li class="nav-item extra-spc">Cookie Policy</li>
+            <li class="nav-item extra-spc">Terms of Sale</li>
+            <li class="nav-item extra-spc">Archive</li>
+            <li class="nav-item extra-spc">Announcements</li>
+            <li class="nav-item extra-spc">Consents preferences</li>
+          </ul>
+        </div>
+        <div class="col-md-5">
+          <ul class="nav">
+            <li class="nav-item font-weight-bold">Editions:</li>
+            <li class="nav-item extra-spc">U.S. Edition</li>
+            <li class="nav-item extra-spc">Middle East</li>
+            <li class="nav-item extra-spc">日本</li>
+            <li class="nav-item extra-spc">한국</li>
+            <li class="nav-item extra-spc">Pakistan</li>
+            <li class="nav-item extra-spc">Polska</li>
+            <li class="nav-item extra-spc">România</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
